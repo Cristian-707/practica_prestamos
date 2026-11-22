@@ -8,12 +8,9 @@
                 <templates>
                     <t t-name="card">
                         <field name="name" class="fw-bold"/>
-                        <div>
-                            <field name="codigo"/>
-                        </div>
-                        <div>
-                            <field name="categoria"/>
-                        </div>
+                        <div><field name="codigo"/></div>
+                        <div><field name="categoria"/></div>
+                        <div>Veces prestado: <field name="veces_prestado"/></div>
                     </t>
                 </templates>
             </kanban>
@@ -43,6 +40,7 @@
                         <group>
                             <field name="name"/>
                             <field name="codigo"/>
+                            <field name="veces_prestado"/>
                         </group>
                         <group>
                             <field name="categoria"/>
